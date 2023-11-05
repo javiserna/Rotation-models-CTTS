@@ -342,19 +342,26 @@ tbin=0.5
 if tbin==0.5:
     Bin1_B=np.genfromtxt('bin1_B.txt', comments='#', dtype='S')
     Bin1_Macc=np.genfromtxt('bin1_Macc.txt', comments='#', dtype='S')
+    filename_1="./Results/bin1_vsini_result.txt"
+    filename_2="./Results/bin1_parameters_result.txt"
 
 if tbin==1.5:
     Bin1_B=np.genfromtxt('bin2_B.txt', comments='#', dtype='S')
     Bin1_Macc=np.genfromtxt('bin2_Macc.txt', comments='#', dtype='S')
+    filename_1="./Results/bin2_vsini_result.txt"
+    filename_2="./Results/bin2_parameters_result.txt"
 
 if tbin==2.5:
     Bin1_B=np.genfromtxt('bin3_B.txt', comments='#', dtype='S')
     Bin1_Macc=np.genfromtxt('bin3_Macc.txt', comments='#', dtype='S')
+    filename_1="./Results/bin3_vsini_result.txt"
+    filename_2="./Results/bin3_parameters_result.txt"
 
 if tbin==8:
     Bin1_B=np.genfromtxt('bin4_B.txt', comments='#', dtype='S')
     Bin1_Macc=np.genfromtxt('bin4_Macc.txt', comments='#', dtype='S')
-
+    filename_1="./Results/bin4_vsini_result.txt"
+    filename_2="./Results/bin4_parameters_result.txt"
 
 Bfield=Bin1_B[:,0].astype(float)
 cdf_values=Bin1_B[:,1].astype(float)
@@ -443,5 +450,5 @@ for item in results:
 #plt.hist(np.array(vhis), bins='auto')
 #plt.show()
 email_sender()
-np.savetxt("./Results/bin1_vsini_result.txt", vhis, header="vsini")
-np.savetxt("./Results/bin1_parameters_result.txt", result, header="Protin Maccin Bfield")
+np.savetxt(filename_1, vhis, header="vsini")
+np.savetxt(filename_2, result, header="Protin Maccin Bfield")
