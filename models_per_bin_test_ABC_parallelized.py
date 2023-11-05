@@ -6,6 +6,29 @@ import scipy
 from scipy.interpolate import interp1d
 import random
 from scipy import optimize
+import smtplib, ssl
+from email.message import EmailMessage
+
+def email_sender():
+    port = 465  # For SSL
+    smtp_server = "smtp.gmail.com"
+    sender_email = "tessextractor.app@gmail.com"  # Enter your address
+    receiver_email = "jserna@astro.unam.mx"
+    password = "vdvkjdfkfuqyqwvs"
+    subject = f'Confirmation Job Done'
+    body = """
+    Job done!
+    """
+    em = EmailMessage()
+    em['From'] = sender_email
+    em['To'] = receiver_email
+    em['Subject'] = subject
+    em.set_content(body)
+    context = ssl.create_default_context()
+    with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
+        server.login(sender_email, password)
+        server.sendmail(sender_email, receiver_email, em.as_string())
+
 
 def REFUGEE(Mass, Prot, Macc, Tdisk, Bfield, betta, gamma, APSW):
 
@@ -342,7 +365,7 @@ Macc_=np.linspace(min(central_values),max(central_values),10)
 
 #################################################################
 # Sample random x values
-num_samples = 10  # Change this to the number of samples you want
+num_samples = 4  # Change this to the number of samples you want
 random_B_samples = [sample_random_x(cdf_values) for _ in range(num_samples)]
 
 # Map the random_x_samples to actual x values based on your original data
@@ -379,8 +402,8 @@ result=[]
 vhis=[]
 #############################################################################
 #print(random_values)
-plt.figure(2)
-plt.hist(random_values_B, bins='auto')
+#plt.figure(2)
+#plt.hist(random_values_B, bins='auto')
 
 def compute(params):
     global tbin
@@ -416,8 +439,9 @@ for item in results:
     vhis.append(value)
 
 # Continue with your code for plotting and saving results
-plt.figure(3)
-plt.hist(np.array(vhis), bins='auto')
-plt.show()
+#plt.figure(3)
+#plt.hist(np.array(vhis), bins='auto')
+#plt.show()
+email_sender()
 np.savetxt("./Results/bin1_vsini_result.txt", vhis, header="vsini")
 np.savetxt("./Results/bin1_parameters_result.txt", result, header="Protin Maccin Bfield")
