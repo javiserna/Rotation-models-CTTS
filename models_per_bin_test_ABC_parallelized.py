@@ -368,7 +368,7 @@ cdf_values=Bin1_B[:,1].astype(float)
 bin_heights=Bin1_Macc[:,0].astype(float)
 central_values_=Bin1_Macc[:,1].astype(float)
 central_values=central_values_+ np.log10(np.exp((tbin-0.5)/2.1))
-Macc_=np.linspace(min(central_values),max(central_values),10)
+Macc_=np.linspace(min(central_values),max(central_values),100)
 
 #################################################################
 # Sample random x values
