@@ -432,7 +432,7 @@ def compute(params):
 # Parallelize the computation
 if __name__ == '__main__':
     num_processes = 10  # Adjust the number of processes as needed
-    params_list = [(Mass[0], random.choice(Pin), j, i, APSW[0]) for i in random_values_B for j in random_values_Macc]
+    params_list = [(Mass[0], random.choice(Pin), j, i, APSW[0]) for i, j in zip(random_values_B,random_values_Macc)]
 
     with Pool(num_processes) as pool:
         results = pool.map(compute, params_list)
