@@ -9,7 +9,7 @@ from scipy import optimize
 import smtplib, ssl
 from email.message import EmailMessage
 from scipy.stats import ks_2samp
-
+from scipy.stats import norm
 
 def email_sender():
     port = 465  # For SSL
