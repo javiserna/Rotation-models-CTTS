@@ -394,10 +394,10 @@ if __name__ == '__main__':
 
     ages=[0.5, 1.5, 2.5, 8]
     num_processes = 60  # Adjust the number of processes as needed
-    repetitions = 1000
-    result = [[] for _ in range(repetitions)]
-    vhis = [[] for _ in range(repetitions)]
+    repetitions = 100
     for tbin in ages:
+        result = [[] for _ in range(repetitions)]
+        vhis = [[] for _ in range(repetitions)]
         if tbin==0.5:
             num_samples = 62  #[62 68 40 30] # Change this to the number of samples you want
             Bin1_B=np.genfromtxt('bin1_B.txt', comments='#', dtype='S')
@@ -510,7 +510,8 @@ if __name__ == '__main__':
         plt.ylim(0,)
         plt.xlabel(r"$B_{\ast}\,\,\,(G)$")
         plt.savefig(plot_2,dpi=300)
-
+        plt.cla()
+        plt.close()
 
         plt.figure(2)
         if tbin==0.5:
@@ -525,7 +526,8 @@ if __name__ == '__main__':
         plt.ylim(0,)
         plt.xlabel(r"$P^{in}_{rot}\,\,\,(d)$")
         plt.savefig(plot_3,dpi=300)
-
+        plt.cla()
+        plt.close()
 
         plt.figure(3)
         if tbin==0.5:
@@ -542,6 +544,8 @@ if __name__ == '__main__':
         plt.xlabel(r"$\log(\dot{M}_{acc})\,\,\,(\frac{M_{\ast}}{yr})$")
         plt.legend()
         plt.savefig(plot_4,dpi=300)
+        plt.cla()
+        plt.close()
 
         # Find the minimum and maximum value of bin_edges among all histograms
         min_bin_edges = -3.5#min(min(bin_edges) for bin_edges in bin_edges_)
@@ -571,6 +575,8 @@ if __name__ == '__main__':
         plt.xlabel(r"$v\sin(i)\,\,\,[\frac{km}{s}]$")
         plt.legend()
         plt.savefig(plot_,dpi=300)
+        plt.cla()
+        plt.close()
         #plt.show()
 
 email_sender()
