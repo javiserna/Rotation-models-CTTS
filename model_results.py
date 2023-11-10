@@ -9,7 +9,7 @@ from scipy import optimize
 import smtplib, ssl
 from email.message import EmailMessage
 from scipy.stats import ks_2samp
-
+from scipy.stats import gaussian_kde
 
 def email_sender():
     port = 465  # For SSL
@@ -553,8 +553,17 @@ if __name__ == '__main__':
         bin_step = 16
 
         # Create the bar plot with error bars
-        kk = np.histogram(databin, bins=np.linspace(min_bin_edges, max_bin_edges, bin_step))
-        ks_statistic2, ks_pvalue2 = ks_2samp(kk[0], comb_2[:-1])
+        vsini_models = np.concatenate([vhis[i] for i in range(repetitions)])
+        ks_statistic, ks_pvalue = ks_2samp(databin, vsini_models)
+
+        #kde1 = gaussian_kde(databin)
+        #kde2 = gaussian_kde(vsini_models)
+        #w = np.linspace(min(min(databin), min(vsini_models)), max(max(databin), max(vsini_models)), 1000)
+        #pdf1 = kde1(w)
+        #pdf2 = kde2(w)
+        #cdf1 = np.cumsum(pdf1) / np.sum(pdf1)
+        #cdf2 = np.cumsum(pdf2) / np.sum(pdf2)
+        #ks_statistic, ks_pvalue = ks_2samp(cdf1, cdf2)
 
         plt.figure(4)
         if tbin==0.5:
@@ -565,13 +574,16 @@ if __name__ == '__main__':
             plt.title(f'Bin 3 ({num_samples:.0f} models per run, runs:{repetitions:.0f})')
         if tbin==8:
             plt.title(f'Bin 4 ({num_samples:.0f} models per run, runs:{repetitions:.0f})')
-        plt.bar(comb_1, comb_2, width=comb_3, color='red', alpha=0.2, yerr=comb_4, capsize=5, align='edge', label='Models')
+        plt.bar(comb_1, comb_2/(np.sum(comb_2)*np.diff(comb_1)[0]), width=comb_3, color='red', alpha=0.2, yerr=comb_4/(np.sum(comb_2)*np.diff(comb_1)[0]), capsize=5, align='edge', label='Models')
         #plt.bar(padded_bin_centers, median_histogram, width=bar_width, color='red', alpha=0.2, yerr=std_histogram, capsize=5, align='edge', label='Models')
-        y2, _ , _ = plt.hist(databin, bins=np.linspace(min_bin_edges, max_bin_edges, bin_step), alpha=0.2, label='Observations',color='darkgreen')
-        plt.text(50, max(y2)/2, f'K-S: {ks_statistic2:.3f}', fontsize=8)
-        plt.text(50, max(y2)/2.3, f'P-Value: {ks_pvalue2:.3f}', fontsize=8)
-        plt.text(50, max(y2)/1.5, str(comb_2[:-1]), ha='center', va='bottom', fontsize=6)###########NEW#################
-        plt.text(50, max(y2)/1.7, str(kk[0]), ha='center', va='bottom', fontsize=6)###########NEW#################
+        y2, _ , _ = plt.hist(databin, bins=np.linspace(min_bin_edges, max_bin_edges, bin_step), alpha=0.2, density=True, label='Observations',color='darkgreen')
+        ###############################################################################
+        hist_intersection = np.minimum(y2, (comb_2/(np.sum(comb_2)*np.diff(comb_1)[0]))[:-1])
+        area_under_curve = np.trapz(hist_intersection, dx=np.diff(comb_1)[0])
+        #################################################################################
+        plt.text(50, max(y2)/2, f'K-S: {ks_statistic:.3f}', fontsize=8)
+        plt.text(50, max(y2)/2.3, f'P-Value: {ks_pvalue:.3f}', fontsize=8)
+        plt.text(50, max(y2)/1.7, f'Area interception: {area_under_curve:.3f}', fontsize=8)##########
         plt.ylim(0,)
         plt.xlim(-3,100)
         plt.xlabel(r"$v\sin(i)\,\,\,[\frac{km}{s}]$")
