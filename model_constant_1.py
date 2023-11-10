@@ -394,7 +394,7 @@ if __name__ == '__main__':
 
     ages=[0.5, 1.5, 2.5, 8]
     num_processes = 60  # Adjust the number of processes as needed
-    repetitions = 100
+    repetitions = 3
     for tbin in ages:
         Bfield=np.linspace(500, 3500, 300)
         result = [[] for _ in range(repetitions)]
@@ -494,7 +494,7 @@ if __name__ == '__main__':
         comb_1, comb_2, comb_3, comb_4 = combine_histograms(-3.5,100,16, repetitions, vhis)
         comb_1_B, comb_2_B, comb_3_B, comb_4_B = combine_histograms(500,3500,14, repetitions, B_histograms)
         comb_1_Ma, comb_2_Ma, comb_3_Ma, comb_4_Ma = combine_histograms(-10,-6, 10, repetitions, np.log10(Ma_histograms))
-        comb_1_P, comb_2_P, comb_3_P, comb_4_P = combine_histograms(0, 8, 9, repetitions, per_histograms)
+        comb_1_P, comb_2_P, comb_3_P, comb_4_P = combine_histograms(0, 8, 10, repetitions, per_histograms)
 
         plt.figure(1)
         if tbin==0.5:
@@ -559,18 +559,20 @@ if __name__ == '__main__':
 
         plt.figure(4)
         if tbin==0.5:
-            plt.title(f'Bin 1 (sample:{num_samples:.0f}, runs:{repetitions:.0f})')
+            plt.title(f'Bin 1 ({num_samples:.0f} models per run, runs:{repetitions:.0f})')
         if tbin==1.5:
-            plt.title(f'Bin 2 (sample:{num_samples:.0f}, runs:{repetitions:.0f})')
+            plt.title(f'Bin 2 ({num_samples:.0f} models per run, runs:{repetitions:.0f})')
         if tbin==2.5:
-            plt.title(f'Bin 3 (sample:{num_samples:.0f}, runs:{repetitions:.0f})')
+            plt.title(f'Bin 3 ({num_samples:.0f} models per run, runs:{repetitions:.0f})')
         if tbin==8:
-            plt.title(f'Bin 4 (sample:{num_samples:.0f}, runs:{repetitions:.0f})')
+            plt.title(f'Bin 4 ({num_samples:.0f} models per run, runs:{repetitions:.0f})')
         plt.bar(comb_1, comb_2, width=comb_3, color='red', alpha=0.2, yerr=comb_4, capsize=5, align='edge', label='Models')
         #plt.bar(padded_bin_centers, median_histogram, width=bar_width, color='red', alpha=0.2, yerr=std_histogram, capsize=5, align='edge', label='Models')
         y2, _ , _ = plt.hist(databin, bins=np.linspace(min_bin_edges, max_bin_edges, bin_step), alpha=0.2, label='Observations',color='darkgreen')
         plt.text(50, max(y2)/2, f'K-S: {ks_statistic2:.3f}', fontsize=8)
         plt.text(50, max(y2)/2.3, f'P-Value: {ks_pvalue2:.3f}', fontsize=8)
+        plt.text(50, max(y2)/1.5, str(comb_2[:-1]), ha='center', va='bottom', fontsize=6)###########NEW#################
+        plt.text(50, max(y2)/1.7, str(kk[0]), ha='center', va='bottom', fontsize=6)###########NEW#################
         plt.ylim(0,)
         plt.xlim(-3,100)
         plt.xlabel(r"$v\sin(i)\,\,\,[\frac{km}{s}]$")
