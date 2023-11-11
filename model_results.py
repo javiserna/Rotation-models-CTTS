@@ -394,7 +394,7 @@ if __name__ == '__main__':
 
     ages=[0.5, 1.5, 2.5, 8]
     num_processes = 60  # Adjust the number of processes as needed
-    repetitions = 3
+    repetitions = 1000
     for tbin in ages:
         result = [[] for _ in range(repetitions)]
         vhis = [[] for _ in range(repetitions)]
