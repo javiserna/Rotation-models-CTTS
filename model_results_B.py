@@ -393,8 +393,8 @@ def combine_histograms(min_bin_edges, max_bin_edges, bin_number, repetitions, hi
 if __name__ == '__main__':
 
     ages=[0.5, 1.5, 2.5, 8]
-    num_processes = 10  # Adjust the number of processes as needed
-    repetitions = 2
+    num_processes = 60  # Adjust the number of processes as needed
+    repetitions = 100
     for tbin in ages:
         result = [[] for _ in range(repetitions)]
         vhis = [[] for _ in range(repetitions)]
