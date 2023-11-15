@@ -567,13 +567,17 @@ if __name__ == '__main__':
 
         plt.figure(4)
         if tbin==0.5:
-            plt.title(f'Bin 1 ({num_samples:.0f} models per run, runs:{repetitions:.0f})')
+            #plt.title(f'Bin 1 ({num_samples:.0f} models per run, runs:{repetitions:.0f})')
+            plt.title(f'Bin 1')
         if tbin==1.5:
-            plt.title(f'Bin 2 ({num_samples:.0f} models per run, runs:{repetitions:.0f})')
+            #plt.title(f'Bin 2 ({num_samples:.0f} models per run, runs:{repetitions:.0f})')
+            plt.title(f'Bin 2')
         if tbin==2.5:
-            plt.title(f'Bin 3 ({num_samples:.0f} models per run, runs:{repetitions:.0f})')
+            #plt.title(f'Bin 3 ({num_samples:.0f} models per run, runs:{repetitions:.0f})')
+            plt.title(f'Bin 3')
         if tbin==8:
-            plt.title(f'Bin 4 ({num_samples:.0f} models per run, runs:{repetitions:.0f})')
+            #plt.title(f'Bin 4 ({num_samples:.0f} models per run, runs:{repetitions:.0f})')
+            plt.title(f'Bin 4')
         plt.bar(comb_1, comb_2/(np.sum(comb_2)*np.diff(comb_1)[0]), width=comb_3, color='red', alpha=0.2, yerr=comb_4/(np.sum(comb_2)*np.diff(comb_1)[0]), capsize=5, align='edge', label='Models')
         #plt.bar(padded_bin_centers, median_histogram, width=bar_width, color='red', alpha=0.2, yerr=std_histogram, capsize=5, align='edge', label='Models')
         y2, _ , _ = plt.hist(databin, bins=np.linspace(min_bin_edges, max_bin_edges, bin_step), alpha=0.2, density=True, label='Observations',color='darkgreen')
