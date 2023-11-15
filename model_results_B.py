@@ -554,7 +554,7 @@ if __name__ == '__main__':
 
         # Create the bar plot with error bars
         vsini_models = np.concatenate([vhis[i] for i in range(repetitions)])
-        ks_statistic, ks_pvalue = ks_2samp(databin, vsini_models)
+        #ks_statistic, ks_pvalue = ks_2samp(databin, vsini_models)
 
         #kde1 = gaussian_kde(databin)
         #kde2 = gaussian_kde(vsini_models)
@@ -581,8 +581,8 @@ if __name__ == '__main__':
         hist_intersection = np.minimum(y2, (comb_2/(np.sum(comb_2)*np.diff(comb_1)[0]))[:-1])
         area_under_curve = np.trapz(hist_intersection, dx=np.diff(comb_1)[0])
         #################################################################################
-        plt.text(50, max(y2)/2, f'K-S: {ks_statistic:.3f}', fontsize=8)
-        plt.text(50, max(y2)/2.3, f'P-Value: {ks_pvalue:.3f}', fontsize=8)
+        #plt.text(50, max(y2)/2, f'K-S: {ks_statistic:.3f}', fontsize=8)
+        #plt.text(50, max(y2)/2.3, f'P-Value: {ks_pvalue:.3f}', fontsize=8)
         plt.text(50, max(y2)/1.7, f'Area interception: {area_under_curve:.3f}', fontsize=8)##########
         plt.ylim(0,)
         plt.xlim(-3,100)

@@ -416,7 +416,7 @@ if __name__ == '__main__':
         if tbin==1.5:
             num_samples = 68  #[62 68 40 30] # Change this to the number of samples you want
             cdf_values = norm.cdf(chi, loc=0.5, scale=0.05)
-            Bin1_Macc=np.genfromtxt('mdot_bin1_logmdot', comments='#', dtype='S')
+            Bin1_Macc=np.genfromtxt('mdot_bin2_logmdot', comments='#', dtype='S')
             filename_1="./Results/bin2_vsini_result.txt"
             plot_="./Plots/bin2_vsini_model_constant_chi_2.png"
             plot_2="./Plots/bin2_B_model_constant_chi_2.png"
@@ -428,7 +428,7 @@ if __name__ == '__main__':
         if tbin==2.5:
             num_samples = 40  #[62 68 40 30] # Change this to the number of samples you want
             cdf_values = norm.cdf(chi, loc=0.5, scale=0.05)
-            Bin1_Macc=np.genfromtxt('mdot_bin1_logmdot', comments='#', dtype='S')
+            Bin1_Macc=np.genfromtxt('mdot_bin3_logmdot', comments='#', dtype='S')
             filename_1="./Results/bin3_vsini_result.txt"
             plot_="./Plots/bin3_vsini_model_constant_chi_2.png"
             plot_2="./Plots/bin3_B_model_constant_chi_2.png"
@@ -440,7 +440,7 @@ if __name__ == '__main__':
         if tbin==8:
             num_samples = 30  #[62 68 40 30] # Change this to the number of samples you want
             cdf_values = norm.cdf(chi, loc=0.5, scale=0.05)
-            Bin1_Macc=np.genfromtxt('mdot_bin1_logmdot', comments='#', dtype='S')
+            Bin1_Macc=np.genfromtxt('mdot_bin4_logmdot', comments='#', dtype='S')
             filename_1="./Results/bin4_vsini_result.txt"
             plot_="./Plots/bin4_vsini_model_constant_chi_2.png"
             plot_2="./Plots/bin4_B_model_constant_chi_2.png"
@@ -450,7 +450,7 @@ if __name__ == '__main__':
             databin = np.loadtxt('./Plots/vsini_bin4.txt')
 
         bin_=Bin1_Macc.astype(float)
-        central_values=bin_#+ np.log10(np.exp((tbin-0.5)/2.1))
+        central_values=bin_+ np.log10(np.exp((tbin-0.5)/2.1))
         bin_heights, bin_edges = np.histogram(central_values, bins=1000)
         Macc_=np.linspace(min(bin_edges[1:]),max(bin_edges[1:]),100)
 
@@ -557,7 +557,7 @@ if __name__ == '__main__':
 
         # Create the bar plot with error bars
         vsini_models = np.concatenate([vhis[i] for i in range(repetitions)])
-        ks_statistic, ks_pvalue = ks_2samp(databin, vsini_models)
+        #ks_statistic, ks_pvalue = ks_2samp(databin, vsini_models)
 
         #kde1 = gaussian_kde(databin)
         #kde2 = gaussian_kde(vsini_models)
@@ -584,8 +584,8 @@ if __name__ == '__main__':
         hist_intersection = np.minimum(y2, (comb_2/(np.sum(comb_2)*np.diff(comb_1)[0]))[:-1])
         area_under_curve = np.trapz(hist_intersection, dx=np.diff(comb_1)[0])
         #################################################################################
-        plt.text(50, max(y2)/2, f'K-S: {ks_statistic:.3f}', fontsize=8)
-        plt.text(50, max(y2)/2.3, f'P-Value: {ks_pvalue:.3f}', fontsize=8)
+        #plt.text(50, max(y2)/2, f'K-S: {ks_statistic:.3f}', fontsize=8)
+        #plt.text(50, max(y2)/2.3, f'P-Value: {ks_pvalue:.3f}', fontsize=8)
         plt.text(50, max(y2)/1.7, f'Area interception: {area_under_curve:.3f}', fontsize=8)##########
         plt.ylim(0,)
         plt.xlim(-3,100)
