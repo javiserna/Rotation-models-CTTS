@@ -62,7 +62,7 @@ In our article, Serna et al., 2023, we present these evolutive tracks
 <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_7_C.png?raw=true" width="400"/> <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_7_D.png?raw=true" width="400"/>
 <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_7_E.png?raw=true" width="400"/>
 
-We also present a grid of models varying all the parameters space for expected values in CTTS. The next panels show the model's density in comparison with measurements of rotation and age of CTTS per mass bin.
+We also present a grid of models varying all the parameters space for expected values in CTTS. The next panels show the model's density per pixel along with the age per mass bin. The white dots are measurements of rotation and age of CTTS. 
 
 <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_8_A.png?raw=true" width="400"/> <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_8_B.png?raw=true" width="400"/>
 <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_8_C.png?raw=true" width="400"/> <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_8_D.png?raw=true" width="400"/>
