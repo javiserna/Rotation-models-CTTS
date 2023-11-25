@@ -10,7 +10,7 @@ This Python code simulates the rotational evolution of young stellar  objects, c
 
 1. Specify the stellar parameters, including mass, rotation period, accretion rate, disk lifetime, and magnetic field strength.
 2. Run the `Rotational_models_CTTS` function to obtain time-dependent rotational evolution data.
-3. Analyze and visualize the results using the returned arrays. For enhanced analysis, consider incorporating measurements of vsini or period alongside age.
+3. Visualize the evolutive track using the arrays returned by the function. For enhanced analysis, consider incorporating measurements of vsini and/or period alongside age.
 
 **Dependencies:**
 
