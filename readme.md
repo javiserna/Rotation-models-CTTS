@@ -20,7 +20,7 @@ This Python code simulates the rotational evolution of young stellar  objects, c
 
 **Example Usage:**
 
-Begin by decompressing this repository. Next, open an IPython console within the main repository directory and execute the above code directly or create a new .py file in the repository folder, copy the above content, and run it.
+Start by extracting the contents of this repository. Then, open an IPython console within the decompressed directory and execute the below code directly. Alternatively, you can create a new .py file in the repository folder, copy the code below, and run it.
 
 ~~~python
 import Rotational_models_CTTS
