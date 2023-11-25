@@ -26,14 +26,14 @@ import matplotlib.pyplot as plt
 
 # Set stellar parameters
 
-Mass = 1.0  # Stellar mass in solar masses
-Prot = 8.0  # Initial rotation period in days
-Macc = 1e-7  # Accretion rate in solar masses per year
-Tdisk = 1e6  # Disk lifetime in years
-Bfield = 2500  # Magnetic field strength in Gauss
-betta = 0.01 # Magnetic field coupling parameter
-gamma = 1.0 # Magnetic field opening parameter
-APSW = 0.1 # Branching ratio parameter
+Mass = 1.0  # Stellar mass in solar masses (Allowed values 0.3, 0.4, 0.5, and so on until, 1.2)
+Prot = 5.0  # Initial rotation period in days
+Macc = 1e-7  # Accretion rate in solar masses per year (Suggested values between 1e-10 and 1e-6)
+Tdisk = 1e7  # Disk lifetime in years
+Bfield = 2500  # Magnetic field strength in Gauss (Suggested values between 100 and 3500 G)
+betta = 0.01 # Magnetic field coupling parameter (Similar to [Matt et al., 2012](https://iopscience.iop.org/article/10.1088/0004-637X/745/1/101))
+gamma = 1.0 # Magnetic field opening parameter (Similar to [Matt et al., 2012](https://iopscience.iop.org/article/10.1088/0004-637X/745/1/101))
+APSW = 0.1 # Branching ratio parameter (Suggested values between 0 and 0.6)
 
 # Run the rotational model
 
