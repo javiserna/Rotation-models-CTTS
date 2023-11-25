@@ -11,7 +11,7 @@ This Python code simulates the rotational evolution of young stellar  objects, c
 
 **Usage:**
 
-1. Specify the stellar parameters, including mass, rotation period, accretion rate, disk temperature, and magnetic field strength.
+1. Specify the stellar parameters, including mass, rotation period, accretion rate, disk lifetime, and magnetic field strength.
 2. Run the `Rotational_model` function to obtain time-dependent rotational evolution data.
 3. Analyze and visualize the results using the returned arrays.
 
@@ -25,30 +25,35 @@ This Python code simulates the rotational evolution of young stellar  objects, c
 
 ~~~python
 ```
-from rotational_model import Rotational_model
+from Rotational-Models-CTTS import Model
 import matplotlib.pyplot as plt
 
 # Set stellar parameters
 
 Mass = 1.0  # Solar masses
-Prot = 8.0  # Rotation period in days
+Prot = 8.0  # Initial rotation period in days
 Macc = 1e-7  # Accretion rate in solar masses per year
-Tdisk = 1e6  # Disk temperature in years
+Tdisk = 1e6  # Disk lifetime in years
 Bfield = 2500  # Magnetic field strength in Gauss
 betta = 0.01
 gamma = 1.0
-APSW = 0.1
+APSW = 0.1 # Branching ratio
 
 # Run the rotational model
 
-time, vrot, period = Rotational_model(Mass, Prot, Macc, Tdisk, Bfield, betta, gamma, APSW)
+time, vsini, period = Model(Mass, Prot, Macc, Tdisk, Bfield, betta, gamma, APSW)
 
 # Plot the results
-
-plt.plot(time, vrot, label='Rotational Velocity')
+plt.figure(1)
+plt.plot(time, vsini)
 plt.xlabel('Time (years)')
 plt.ylabel('Rotational Velocity (km/s)')
 plt.legend()
+
+plt.figure(2)
+plt.plot(time, period)
+plt.xlabel('Time (years)')
+plt.ylabel('Rotation Period (day)')
 plt.show()
 ```
 ~~~
