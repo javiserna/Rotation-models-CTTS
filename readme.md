@@ -62,10 +62,13 @@ In our article, Serna et al., 2023, we present these evolutive tracks
 <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_7_C.png?raw=true" width="400"/> <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_7_D.png?raw=true" width="400"/>
 <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_7_E.png?raw=true" width="400"/>
 
-We also present a grid of models varying all the parameters space for expected values in CTTS. The next panels show the model's density per pixel along with the age per mass bin. The white dots are measurements of rotation and age of CTTS. 
+We also present a grid of models varying all the parameters space for expected values in CTTS.
 
 <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_8_A.png?raw=true" width="400"/> <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_8_B.png?raw=true" width="400"/>
 <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_8_C.png?raw=true" width="400"/> <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_8_D.png?raw=true" width="400"/>
+
+Grid of models illustrated as a density plot of $v\sin(i)=\frac{\pi}{4}v_{rot}$ as a function of the age, in different values of mass. The black line shows the grid's median \vsini, while the gray line contains 90\% of the models below it. The color scale represents the number of models per hex bin pixel. The white dots represent the $v\sin(i)$ and age for the CTTS sample of (Briceño and Hernandez).
+
 
 **References:**
 
