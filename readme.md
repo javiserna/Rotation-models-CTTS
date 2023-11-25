@@ -10,7 +10,7 @@ This Python code simulates the rotational evolution of young stellar  objects, c
 
 1. Specify the stellar parameters, including mass, rotation period, accretion rate, disk lifetime, and magnetic field strength.
 2. Run the `Rotational_models_CTTS` function to obtain time-dependent rotational evolution data.
-3. Visualize the rotational evolutionary track using the arrays returned by the function. For enhanced analysis, consider incorporating measurements of vsini and/or period for individuals or groups of stars alongside the age.
+3. Visualize the rotational evolutionary track using the arrays returned by the function. For enhanced analysis, consider incorporating measurements of vsin(i) and/or period for individuals or groups of stars alongside the age.
 
 **Dependencies:**
 
@@ -30,7 +30,7 @@ import matplotlib.pyplot as plt
 
 Mass = 0.5  # Stellar mass in solar masses (Allowed values 0.3, 0.4, 0.5, and so on until, 1.2)
 Prot = 8.0  # Initial rotation period in days
-Macc = 1e-8  # Accretion rate in solar masses per year (Suggested values between 1e-10 and 1e-6)
+Macc = 1e-8  # Initial accretion rate in solar masses per year (Suggested values between 1e-10 and 1e-6)
 Tdisk = 1e7  # Disk lifetime in years (Time when simulation stops)
 Bfield = 500  # Magnetic field strength in Gauss (Suggested values between 100 and 3500 G)
 betta = 0.01 # Magnetic field coupling parameter (Similar to Matt et al., 2012)
@@ -54,7 +54,7 @@ plt.ylabel('Rotation Period (days)')
 plt.show()
 ~~~
 
-The simulation outputs provide the evolutive track of the stellar rotation (v sin(i) and/or Prot). These values are particularly valuable as they can be directly compared with observational data.
+The simulation outputs provide an evolutive track of the stellar rotation (v sin(i) and/or Prot) for the specific input values []. These values are particularly valuable as they can be directly compared with observational data.
 
 **References:**
 
