@@ -1,4 +1,4 @@
-**Rotational Model for Young Stellar Objects**
+## Rotational Model for Young Stellar Objects
 
 This Python code simulates the rotational evolution of young stellar  objects, considering the influence of accretion, magnetic braking, and  the presence of a protoplanetary disk. The model is based on the Baraffe stellar evolution data and includes numerical solutions for the system  of differential equations governing the star's rotation rate over time.
 
