@@ -29,8 +29,8 @@ import matplotlib.pyplot as plt
 # Set stellar parameters
 
 Mass = 0.5  # Stellar mass in solar masses (Allowed values 0.3, 0.4, 0.5, and so on until, 1.2)
-Prot = 8.0  # Initial rotation period in days
-Macc = 1e-8  # Initial accretion rate in solar masses per year (Suggested values between 1e-10 and 1e-6)
+Prot_in = 8.0  # Initial rotation period in days
+Macc_in = 1e-8  # Initial accretion rate in solar masses per year (Suggested values between 1e-10 and 1e-6)
 Tdisk = 1e7  # Disk lifetime in years (Time when simulation stops)
 Bfield = 500  # Magnetic field strength in Gauss (Suggested values between 100 and 3500 G)
 betta = 0.01 # Magnetic field coupling parameter (Similar to Matt et al., 2012)
@@ -39,7 +39,7 @@ APSW = 0.01 # Branching ratio parameter (Suggested values between 0.01 and 0.6)
 
 # Run the rotational model
 
-time, vsini, period = Rotational_models_CTTS.Run(Mass, Prot, Macc, Tdisk, Bfield, betta, gamma, APSW)
+time, vsini, period = Rotational_models_CTTS.Run(Mass, Prot_in, Macc_in, Tdisk, Bfield, betta, gamma, APSW)
 
 # Plot the results
 plt.figure(1)
@@ -54,7 +54,7 @@ plt.ylabel('Rotation Period (days)')
 plt.show()
 ~~~
 
-The simulation outputs provide an evolutive track of the stellar rotation (v sin(i) and/or Prot) for the specific input values [$M_\ast$, $B_{\ast}$, $\chi$, $P^{in}_{rot}$, $\dot{M}^{in}_{acc}$]. These values are particularly valuable as they can be directly compared with observational data.
+The simulation outputs provide an evolutive track of the stellar rotation (v sin(i) and/or Prot) for the specific input values [$M_{\ast}$, $B_{\ast}$, $\chi$, $P^{in}_{rot}$, $\dot{M}^{in}_{acc}$]. These values are particularly valuable as they can be directly compared with observational data.
 
 In our article, Serna et al., 2023, we present these evolutive tracks 
 
