@@ -53,7 +53,7 @@ plt.ylabel('Rotation Period (day)')
 plt.show()
 ~~~
 
-The simulation outputs include the time evolution of the stellar rotational velocity (vsini) and rotational period. These values are particularly valuable as they can be directly compared with observational data.
+The simulation outputs provide the evolutive track of the stellar rotation (v sin(i) and/or Prot). These values are particularly valuable as they can be directly compared with observational data.
 
 **References:**
 
