@@ -1,6 +1,6 @@
 # Rotational Models for Classical T Tauri Stars
 
-This Python code simulates the rotational evolution of young stellar  objects, considering the influence of accretion, magnetic braking via the presence of a protoplanetary disk, and accretion-powered stellar winds ([Matt et al., 2012](https://doi.org/10.1051/0004-6361/201425481), [Pinzón et al., 2021](https://doi.org/10.1051/0004-6361/201425481)). The model is based on the evolution of the inertia moment from [Baraffe et al. 2015](https://doi.org/10.1051/0004-6361/201425481) and includes numerical solutions for the system of differential equations governing the star's rotation rate over time.
+This Python code simulates the rotational evolution of young stellar  objects, considering the influence of accretion, magnetic braking via the presence of a protoplanetary disk, and accretion-powered stellar winds ([Matt et al., 2012](https://iopscience.iop.org/article/10.1088/0004-637X/745/1/101), [Pinzón et al., 2021](https://iopscience.iop.org/article/10.3847/1538-3881/ac04ae)). The model is based on the evolution of the inertia moment from [Baraffe et al. 2015](https://doi.org/10.1051/0004-6361/201425481) and includes numerical solutions for the system of differential equations governing the star's rotation rate over time.
 
 **Key Features:**
 
