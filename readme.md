@@ -1,6 +1,6 @@
 # Rotational Models for Classical T Tauri Stars
 
-This Python code simulates the rotational evolution of young stellar  objects, considering the influence of accretion, magnetic braking via the presence of a protoplanetary disk, and accretion-powered stellar winds ([Matt et al., 2012](https://iopscience.iop.org/article/10.1088/0004-637X/745/1/101), [Pinzón et al., 2021](https://iopscience.iop.org/article/10.3847/1538-3881/ac04ae)). The model is based on the evolution of the inertia moment from [Baraffe et al. 2015](https://doi.org/10.1051/0004-6361/201425481) and offers numerical solutions for the system of differential equations governing the star's rotation rate over time.
+This Python code simulates the rotational evolution of young stellar  objects, considering the influence of accretion, magnetic braking via the presence of a protoplanetary disk, and accretion-powered stellar winds ([Matt et al., 2012](https://iopscience.iop.org/article/10.1088/0004-637X/745/1/101), [Pinzón et al., 2021](https://iopscience.iop.org/article/10.3847/1538-3881/ac04ae)). The model is based on the evolution of the inertia moment from [Baraffe et al., 2015](https://doi.org/10.1051/0004-6361/201425481) and offers numerical solutions for the system of differential equations governing the star's rotation rate over time.
 
 **Key Features:**
 
@@ -58,14 +58,14 @@ The simulation outputs provide an evolutive track of the stellar rotation ($v\si
 
 In our article, Serna et al., 2023, we present these evolutive tracks 
 
-<img src="" width="400"/> <img src="" width="400"/>
-<img src="" width="400"/> <img src="" width="400"/>
-<img src="" width="400"/>
+<img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_7_A.png?raw=true" width="400"/> <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_7_B.png?raw=true" width="400"/>
+<img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_7_C.png?raw=true" width="400"/> <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_7_D.png?raw=true" width="400"/>
+<img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_7_E.png?raw=true" width="400"/>
 
 Also, we present a grid of models varying all the parameters for expected values in CTTS in comparison with measurements of rotation and age of CTTS.
 
-<img src="" width="400"/> <img src="" width="400"/>
-<img src="" width="400"/> <img src="" width="400"/>
+<img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_8_A.png?raw=true" width="400"/> <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_8_B.png?raw=true" width="400"/>
+<img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_8_C.png?raw=true" width="400"/> <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_8_D.png?raw=true" width="400"/>
 
 **References:**
 
