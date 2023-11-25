@@ -33,7 +33,7 @@ Tdisk = 1e6  # Disk lifetime in years
 Bfield = 2500  # Magnetic field strength in Gauss
 betta = 0.01 # Remain fixed
 gamma = 1.0 # Remain fixed
-APSW = 0.1 # Branching ratio
+APSW = 0.1 # Branching ratio parameter
 
 # Run the rotational model
 
