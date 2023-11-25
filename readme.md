@@ -31,8 +31,8 @@ Prot = 8.0  # Initial rotation period in days
 Macc = 1e-7  # Accretion rate in solar masses per year
 Tdisk = 1e6  # Disk lifetime in years
 Bfield = 2500  # Magnetic field strength in Gauss
-betta = 0.01 # Remain fixed
-gamma = 1.0 # Remain fixed
+betta = 0.01 # Magnetic field coupling parameter
+gamma = 1.0 # Magnetic field opening parameter
 APSW = 0.1 # Branching ratio parameter
 
 # Run the rotational model
