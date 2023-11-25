@@ -62,7 +62,7 @@ In our article, Serna et al., 2023, we present these evolutive tracks
 <img src="" width="400"/> <img src="" width="400"/>
 <img src="" width="400"/>
 
-Also, we present a grid of models varying all the parameters for expected values in CTTS.
+Also, we present a grid of models varying all the parameters for expected values in CTTS in comparison with measurements of rotation and age of CTTS.
 
 <img src="" width="400"/> <img src="" width="400"/>
 <img src="" width="400"/> <img src="" width="400"/>
