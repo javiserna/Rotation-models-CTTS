@@ -54,9 +54,16 @@ plt.ylabel('Rotation Period (days)')
 plt.show()
 ~~~
 
-The simulation outputs provide an evolutive track of the stellar rotation (v sin(i) and/or Prot) for the specific input values [$M_{\ast}, B_{\ast}, \chi, P^{in}_{rot}, \dot{M}^{in}_{acc}$]. These values are particularly valuable as they can be directly compared with observational data.
+The simulation outputs provide an evolutive track of the stellar rotation (v sin(i) and/or Prot) for the specific input values [$M_{\ast}$, $B_{\ast}$, $\chi$, $P^{in}_{rot}$, $\dot{M}^{in}_{acc}$]. These values are particularly valuable as they can be directly compared with observational data.
 
 In our article, Serna et al., 2023, we present these evolutive tracks 
+
+
+
+
+Also, we present a grid of models varying all the parameters for expected values in CTTS.
+
+
 
 
 **References:**
