@@ -44,7 +44,6 @@ plt.figure(1)
 plt.plot(time, vsini)
 plt.xlabel('Time (years)')
 plt.ylabel('Rotational Velocity (km/s)')
-plt.legend()
 
 plt.figure(2)
 plt.plot(time, period)
