@@ -43,8 +43,8 @@ time, vsini, period = Rotational_models_CTTS.Run(Mass, Prot, Macc, Tdisk, Bfield
 
 # Plot the results
 plt.figure(1)
-plt.plot(time, vsini)
-plt.xlabel('Time/1e6 (Myr)')
+plt.plot(time/1e6, vsini)
+plt.xlabel('Time (Myr)')
 plt.ylabel('Rotational Velocity (km/s)')
 
 plt.figure(2)
