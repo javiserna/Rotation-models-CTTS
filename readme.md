@@ -56,6 +56,8 @@ plt.ylabel('Rotation Period (day)')
 plt.show()
 ~~~
 
+The simulation outputs include the time evolution of the stellar rotational velocity (vsini) and rotational period. These values are particularly valuable as they can be directly compared with observational data.
+
 **References:**
 
 Serna. J, Pinzón. G, Hernández. J et al., 2023 (Submitted to ApJ). Rotational Evolution of Classical T Tauri Stars: Models and Observations.
