@@ -25,7 +25,7 @@ This Python code simulates the rotational evolution of young stellar  objects, c
 
 ~~~python
 ```
-from Rotational-Models-CTTS import Model
+from Rotational-Models-CTTS import Rotational_model
 import matplotlib.pyplot as plt
 
 # Set stellar parameters
@@ -41,7 +41,7 @@ APSW = 0.1 # Branching ratio
 
 # Run the rotational model
 
-time, vsini, period = Model(Mass, Prot, Macc, Tdisk, Bfield, betta, gamma, APSW)
+time, vsini, period = Rotational_model(Mass, Prot, Macc, Tdisk, Bfield, betta, gamma, APSW)
 
 # Plot the results
 plt.figure(1)
