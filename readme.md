@@ -5,7 +5,7 @@ This Python code simulates the rotational evolution of young stellar  objects, c
 **Key Features:**
 
 - Utilizes Baraffe stellar evolution data for initial conditions.
-- Numerically integrates differential equations to model accretion, magnetic braking, and disk effects.
+- Numerically integrates differential equations to model accretion, magnetic braking, and wind effects.
 - Adaptive step size adjustment during integration for accuracy and efficiency.
 - Provides outputs including time evolution of rotational velocity, torque components, radii, mass, and period.
 
@@ -24,7 +24,6 @@ This Python code simulates the rotational evolution of young stellar  objects, c
 **Example Usage:**
 
 ~~~python
-```
 from Rotational-Models-CTTS import Rotational_model
 import matplotlib.pyplot as plt
 
@@ -55,7 +54,6 @@ plt.plot(time, period)
 plt.xlabel('Time (years)')
 plt.ylabel('Rotation Period (day)')
 plt.show()
-```
 ~~~
 
 **References:**
