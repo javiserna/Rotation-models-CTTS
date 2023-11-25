@@ -19,6 +19,7 @@ This Python code simulates the rotational evolution of young stellar  objects, c
 - `scipy`
 
 **Example Usage:**
+First, uncompress this repository, then execute the following code in the main directory of the repository.
 
 ~~~python
 import Rotational_models_CTTS
