@@ -69,6 +69,8 @@ The grid of models is illustrated as follows as a density plot of $`v\sin(i)=\fr
 <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_8_A.png?raw=true" width="400"/> <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_8_B.png?raw=true" width="400"/>
 <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_8_C.png?raw=true" width="400"/> <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_8_D.png?raw=true" width="400"/>
 
+The plots show a decreasing trend of the median of $`v\sin(i)`$ with age. Despite the wide range of initial conditions considered for CTTS, most solutions lie on the slow rotator regime with rotation below 10\% of the break-up limit as expected for CTTS. In general, our models are in agreement with observations. For the first time, these models allow us to study how the magnetic field strength (B∗) and branching ratio (χ) change in relation to rotation rates and ages.
+
 **References:**
 
 Serna. J, Pinzón. G, Hernández. J et al., 2023 (Submitted to ApJ). Rotational Evolution of Classical T Tauri Stars: Models and Observations.
