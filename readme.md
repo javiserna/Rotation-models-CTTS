@@ -8,7 +8,7 @@ This Python code simulates the rotational evolution of young stellar  objects, c
 
 **Usage:**
 
-1. Specify the stellar parameters, including mass ($`M_{\ast}`$), initial rotation period ($`P^{in}_{rot}`$), initial accretion rate ($`\dot{M}^{in}_{acc}`$), disk lifetime, magnetic field strength ($`B_{\ast}`$), and branching ratio ($`\chi`$).
+1. Specify the stellar parameters, including mass ($`M_{\ast}`$), initial rotation period ($`P^{in}_{rot}`$), initial accretion rate ($`\dot{M}^{in}_{acc}`$), disk lifetime, magnetic field strength ($`B_{\ast}`$), and branching ratio ($`\chi`$ or APSW).
 4. Run the `Rotational_models_CTTS` function to obtain time-dependent rotational evolution data.
 5. Visualize the rotational evolutionary track using the arrays returned by the function. For enhanced analysis, consider incorporating measurements of $`v\sin(i)`$ and/or $`P_{rot}`$ for individuals or groups of stars alongside the age.
 
