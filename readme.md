@@ -8,9 +8,9 @@ This Python code simulates the rotational evolution of young stellar  objects, c
 
 **Usage:**
 
-1. Specify the stellar parameters, including mass, rotation period, accretion rate, disk lifetime, and magnetic field strength.
-2. Run the `Rotational_models_CTTS` function to obtain time-dependent rotational evolution data.
-3. Visualize the rotational evolutionary track using the arrays returned by the function. For enhanced analysis, consider incorporating measurements of $`v\sin(i)`$ and/or $`P_{rot}`$ for individuals or groups of stars alongside the age.
+1. Specify the stellar parameters, including mass ($`M_{\ast}`$), initial rotation period ($`P^{in}_{rot}`$), initial accretion rate ($`\dot{M}^{in}_{acc}`$), disk lifetime, magnetic field strength ($`B_{\ast}`$), and branching ratio ($`\chi`$).
+4. Run the `Rotational_models_CTTS` function to obtain time-dependent rotational evolution data.
+5. Visualize the rotational evolutionary track using the arrays returned by the function. For enhanced analysis, consider incorporating measurements of $`v\sin(i)`$ and/or $`P_{rot}`$ for individuals or groups of stars alongside the age.
 
 **Dependencies:**
 
@@ -68,7 +68,6 @@ The grid of models is illustrated as follows as a density plot of $`v\sin(i)=\fr
 
 <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_8_A.png?raw=true" width="400"/> <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_8_B.png?raw=true" width="400"/>
 <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_8_C.png?raw=true" width="400"/> <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_8_D.png?raw=true" width="400"/>
-
 
 
 **References:**
