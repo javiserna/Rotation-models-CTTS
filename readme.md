@@ -56,7 +56,7 @@ plt.show()
 
 The model provides an evolutive track of the stellar rotation ($`v\sin(i)`$ and/or $`P_{rot}`$) for a specific input value [$`M_{\ast}`$, $`B_{\ast}`$, $`\chi`$, $`P^{in}_{rot}`$, $`\dot{M}^{in}_{acc}`$]. These values are particularly valuable as they can be directly compared with observational data (see plots below).
 
-In our article (Serna et al., 2023, Submitted to ApJ), For illustrative purposes, we show evolutive tracks for specific cases varying one input parameter while others remain fixed. 
+For instance, in our article (Serna et al., 2023, Submitted to ApJ), we show evolutive tracks for specific cases varying one input parameter while others remain fixed. 
 
 <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_7_A.png?raw=true" width="400"/> <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_7_B.png?raw=true" width="400"/>
 <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_7_C.png?raw=true" width="400"/> <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_7_D.png?raw=true" width="400"/>
