@@ -56,13 +56,15 @@ plt.show()
 
 The model provides an evolutive track of the stellar rotation ($`v\sin(i)`$ and/or $`P_{rot}`$) for a specific input value [$`M_{\ast}`$, $`B_{\ast}`$, $`\chi`$, $`P^{in}_{rot}`$, $`\dot{M}^{in}_{acc}`$]. These output values are particularly valuable as they can be directly compared with observational data (see some applications below).
 
-For instance, in our article (Serna et al., 2023, Submitted to ApJ), we show evolutive tracks for specific cases varying one input parameter while others remain fixed. 
+We provide some outcomes from the use of these models below:
+
+In our article (Serna et al., 2023, Submitted to ApJ), we show evolutive tracks for specific cases varying one input parameter while others remain fixed. 
 
 <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_7_A.png?raw=true" width="400"/> <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_7_B.png?raw=true" width="400"/>
 <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_7_C.png?raw=true" width="400"/> <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_7_D.png?raw=true" width="400"/>
 <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_7_E.png?raw=true" width="400"/>
 
-Our main result was to present a grid of models including all the parameters space for expected values in CTTS (~$`2.2 \times 10^{6}`$ evolutive tracks in total) and present a comparison with observations.
+We also present a grid of models using a parameters space of expected values in CTTS (~$`2.2 \times 10^{6}`$ evolutive tracks in total) and present a comparison with observations.
 
 The grid of models is illustrated as follows as a density plot of $`v\sin(i)=\frac{\pi}{4}v_{rot}`$ as a function of the age, in different values of mass. The black line shows the grid's median $`v\sin(i)`$, while the gray line contains 90\% of the models below it. The color scale represents the number of models per hex bin pixel. The white dots represent the $`v\sin(i)`$ and age for a sample of CTTS from [Hernández et al., 2014](https://iopscience.iop.org/article/10.1088/0004-637X/794/1/36) and [Briceño et al., 2019](https://iopscience.iop.org/article/10.3847/1538-3881/aaf79b).
 
@@ -70,6 +72,8 @@ The grid of models is illustrated as follows as a density plot of $`v\sin(i)=\fr
 <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_8_C.png?raw=true" width="400"/> <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_8_D.png?raw=true" width="400"/>
 
 The plots show a decreasing trend of the median of $`v\sin(i)`$ with age. Despite the wide range of initial conditions considered for CTTS, most solutions lie on the slow rotator regime with rotation below 10\% of the break-up limit as expected for CTTS. In general, our models are in agreement with observations. For the first time, these models allow us to study how the magnetic field strength (B∗) and branching ratio (χ) change in relation to rotation rates and ages.
+
+As new period measurements in CTTS are available it is possible to replicate the last plots using evolutionary tracks of $´P_{rot}´$. 
 
 **References:**
 
