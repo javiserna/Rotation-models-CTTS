@@ -64,7 +64,7 @@ In our article (Serna et al., 2023, Submitted to ApJ), we show evolutive tracks 
 <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_7_C.png?raw=true" width="400"/> <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_7_D.png?raw=true" width="400"/>
 <img src="https://github.com/javiserna/Rotational-models-of-CTTS/blob/main/Plots/Figure_7_E.png?raw=true" width="400"/>
 
-We also present a grid of models using a parameters space of expected values in CTTS (~$`2.2 \times 10^{6}`$ evolutive tracks in total) and present a comparison with observations.
+We also present a grid of models using a parameters space of expected values in CTTS (~$`2.2 \times 10^{6}`$ evolutive tracks in total) and present a comparison of the model's grid with observations.
 
 The grid of models is illustrated as follows as a density plot of $`v\sin(i)=\frac{\pi}{4}v_{rot}`$ as a function of the age, in different values of mass. The black line shows the grid's median $`v\sin(i)`$, while the gray line contains 90\% of the models below it. The color scale represents the number of models per hex bin pixel. The white dots represent the $`v\sin(i)`$ and age for a sample of CTTS from [Hernández et al., 2014](https://iopscience.iop.org/article/10.1088/0004-637X/794/1/36) and [Briceño et al., 2019](https://iopscience.iop.org/article/10.3847/1538-3881/aaf79b).
 
