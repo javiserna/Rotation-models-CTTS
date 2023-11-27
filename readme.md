@@ -56,7 +56,7 @@ plt.show()
 
 The model provides an evolutive track of the stellar rotation ($`v\sin(i)`$ and/or $`P_{rot}`$) for a specific input value [$`M_{\ast}`$, $`B_{\ast}`$, $`\chi`$, $`P^{in}_{rot}`$, $`\dot{M}^{in}_{acc}`$]. These output values are particularly valuable as they can be directly compared with observational data (see some applications below).
 
-We provide some outcomes from the use of these models below:
+We provide some outcomes from the use of these models:
 
 In our article (Serna et al., 2023, Submitted to ApJ), we show evolutive tracks for specific cases varying one input parameter while others remain fixed. 
 
