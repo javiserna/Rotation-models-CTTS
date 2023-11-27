@@ -75,7 +75,7 @@ The plots show a decreasing trend of the median of $`v\sin(i)`$ with age. Despit
 
 **Future Work:**
 - As new period measurements in CTTS are available, will be possible to replicate the last plots using evolutionary tracks of $`P_{rot}`$.
-- 
+  
 Measurements of periods in CTTS can be challenging to obtain because of complex brightness variations in the light curves. Despite the challenges, in some cases is possible to get a signature of the rotation in the light curve of these objects.
 
 **References:**
