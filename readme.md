@@ -81,4 +81,4 @@ Measurements of periods in CTTS can be challenging to obtain because of complex 
 
 **References:**
 
-Serna. J, Pinzón. G, Hernández. J et al., 2023 (Submitted to ApJ). Rotational Evolution of Classical T Tauri Stars: Models and Observations.
+Serna. J, Pinzón. G, Hernández. J et al., 2024 (Accepted for Publication in ApJ). Rotational Evolution of Classical T Tauri Stars: Models and Observations.
